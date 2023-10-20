@@ -272,16 +272,12 @@ body{
     .container{
         display: flex;
         text-align: initial;
-        gap: 2rem;
         align-items: center;
+        justify-content: space-around;
     }
 
     .grow-together, .your-user{
         flex-direction: row-reverse;
-    }
-
-    .illustration-flowing-conversation, .margin-left{
-        margin-left: 2rem;
     }
     }
 
@@ -313,6 +309,29 @@ body{
         gap: 5rem;
         margin-left: 2rem;
         margin-right: 2rem;
+        flex: 1;
+        min-width: 0;
+
+    }
+
+    .illustration-grow-together{
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+
+    .texts-container{
+        flex-basis: 40%;
+        max-width: 40%;
+    }
+
+    .illustration-flowing-conversation{
+        flex-basis: 30%;
+        max-width: 30%;
+    }
+
+    .illustration-your-users{
+        flex-basis: 30%;
+        max-width: 30%;
     }
 
     .flex-container{
